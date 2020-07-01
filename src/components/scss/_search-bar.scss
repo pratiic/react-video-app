@@ -1,0 +1,41 @@
+.form {
+	@include flex(center, center);
+	padding: 3rem;
+	background-color: $light-grey-background;
+	margin-bottom: 3rem;
+
+	.input-group {
+		position: relative;
+		width: 50rem;
+	}
+
+	.search-icon {
+		font-size: 1.75rem;
+		position: absolute;
+		left: 1rem;
+		top: 50%;
+		transform: translateY(-50%);
+		color: $light-grey-text;
+	}
+
+	.search-bar {
+		display: block;
+		border: 2px solid $light-grey-text;
+		width: 100%;
+		outline: none;
+		height: 3.7rem;
+		font-size: 1.75rem;
+		font-weight: 500;
+		padding: 0 3.5rem;
+		border-radius: 3rem;
+		background-color: $light-grey-background;
+		color: $light-grey-text;
+	}
+
+	::-webkit-input-placeholder {
+		font-weight: inherit;
+		font-size: inherit;
+		color: inherit;
+		letter-spacing: 1px;
+	}
+}
